@@ -1,0 +1,1424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro", sans serif;
+    font-size: 15.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    text-align: center;
+}
+
+section * {
+    width: 90%;
+    margin: auto;
+}
+
+section, footer {
+    position:relative;
+    top: 50px;
+}
+
+h1, h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.orange-line {
+    height: 8px;
+    width: 64px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    background-color: #f27e2b;
+}
+
+.orange-link {
+    color: #f27e2b;
+}
+
+.white-button {
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #f27e2b;
+    border: 1px solid #f27e2b;
+    border-radius: 3px;
+    font-size: 14px;
+    width: auto;
+    margin: 0;
+    display: inline-block;
+}
+
+.orange-button {
+    padding: 12px 24px;
+    background-color: #f27e2b;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    width: auto;
+    margin: 0;
+    display: inline-block;
+}
+
+.blue-button {
+    padding: 12px 24px;
+    background-color: #2e2c6c;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    width: auto;
+    margin: 0;
+    display: inline-block;
+}
+/* --------------------------------------------------------------------------------------------- */
+/* ############## */
+/* Header section */
+/* ############## */
+header {
+    width: 100%;
+    height: 50px;
+    border-top: 3px solid #f27e2b;
+    background-color: #fafafb;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.05),0 2px 8px rgba(0,0,0,0.05);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+#header-max-1264 {
+    max-width: 1264px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    display: inline-block;
+}
+
+header a:hover {
+    background-color: #e4e6e8;
+}
+
+header ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+#header-left {
+    display: flex;
+    align-items: center;
+}
+
+#header-toggle {
+    width: 44px;
+    height: 47px;
+    background: url("images/header/menu_toggle.svg") no-repeat center;
+}
+
+#header-logo {
+    width: 41px;
+    height: 47px;
+    background: url("images/header/label_img.svg") no-repeat center;
+}
+
+.show-on-wide {
+    display: none;
+}
+
+#header-links a {
+    padding: 6px 8px;
+    margin: 2px;
+    border-radius: 13px;
+    font-size: 11px;
+    color: #535a60;
+}
+
+#header-right {
+    display: flex;
+    align-items: center;
+}
+
+#header-form {
+    display: none;
+    padding: 0 12px;
+}
+
+#header-form input {
+    border: 1px solid #bbc0c4;
+    border-radius: 3px;
+    padding: 8px 8px 8px 32px;
+    background-image: url("images/header/loupe_light.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 9px;
+    background-color: #fff;
+    width: 100%;
+}
+
+#header-form input::placeholder {
+    color: #bbc0c4;
+    font-size: 13px;
+}
+
+#header-form input:focus {
+    outline: none;
+    border-color: #71bbf5;
+    box-shadow: 0 0 0 4px #d5eafa;
+}
+
+#header-loupe {
+    width: 38px;
+    height: 47px;
+    background: url("images/header/loupe_middle.svg") no-repeat center;
+}
+
+#header-loupe:hover {
+    background: url("images/header/loupe_dark.svg") no-repeat center;
+}
+
+#log-sign {
+    padding: 0 8px 0 4px;
+    white-space: nowrap;
+}
+
+#log-sign a{
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+#login {
+    background-color: #e1ecf4;
+    color: #3d739c;
+    border: 1px solid #7ca7c6;
+    box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 70%);
+    margin-right: 4px;
+}
+
+#login:hover {
+    background-color: #b4d3e9;
+    color: #2f5776;
+}
+
+#login:active {
+    background-color: #a2c7e3;
+    box-shadow: none;
+}
+
+#signup {
+    background-color: #2895fc;
+    color: #fff;
+    border: 1px solid #2895fc;
+    box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 40%);
+}
+
+#signup:hover {
+    background-color: #1e77ca;
+}
+
+#signup:active {
+    background-color: #1b63bb;
+    box-shadow: none;
+}
+/* ##################### */
+/* End of header section */
+/* ##################### */
+/* --------------------------------------------------------------------------------------------- */
+/* ############ */
+/* Main section */
+/* ############ */
+#main-section {
+    background: #fdcf2e url("images/main/background_small.svg") no-repeat top center;
+    padding: 128px 0;
+}
+
+#main-section h1 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+#main-section p {
+    font-size: 20px;
+    max-width: 365px;
+    padding-bottom: 24px;
+}
+
+#main-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-links .white-button {
+    margin-bottom: 8px;
+}
+
+#mono {
+    font-family: "Consolas", "Menlo", "Monaco", "Lucida Console", "Liberation Mono",
+    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, sans-serif;
+}
+/* ################### */
+/* End of main section */
+/* ################### */
+/* --------------------------------------------------------------------------------------------- */
+/* ############### */
+/* For-dev section */
+/* ############### */
+#for-dev-section {
+    padding: 64px 0;
+}
+
+#for-dev-section h2{
+    margin-bottom: 24px;
+}
+
+#for-dev-section p {
+    max-width: 460px;
+    margin-bottom: 48px;
+}
+
+#for-dev-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.for-dev-card {
+    border-radius: 7px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06),0 2px 6px rgba(0,0,0,0.06),0 3px 8px rgba(0,0,0,0.09);
+    max-width: 268px;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.for-dev-card img{
+    width: 128px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.for-dev-card:nth-child(1) img {
+    width: 118px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.for-dev-card h3 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.for-dev-card p {
+    width: 100%;
+    font-size: 14.5px;
+    margin-bottom: 24px !important;
+}
+
+.for-dev-card:hover {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.09),0 3px 8px rgba(0,0,0,0.09),0 4px 13px rgba(0,0,0,0.13);
+}
+/* ###################### */
+/* End of for-dev section */
+/* ###################### */
+/* --------------------------------------------------------------------------------------------- */
+/* ############### */
+/* For-bus section */
+/* ############### */
+#for-bus-section {
+    padding: 128px 0;
+    background-color: #f7f6f9;
+}
+
+#for-bus-section h2 {
+    margin-bottom: 24px;
+}
+
+#for-bus-section p {
+    max-width: 550px;
+    margin-bottom: 64px;
+}
+
+#for-bus-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.for-bus-card {
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06),0 2px 6px rgba(0,0,0,0.06),0 3px 8px rgba(0,0,0,0.09);
+    width: 100%;
+    max-width: 335px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.for-bus-card p {
+    margin: 0 !important;
+    text-align: left;
+    width: 100%;
+    max-width: 210px !important;
+}
+
+.for-bus-card img {
+    width: 76px;
+    height: 76px;
+    margin-right: 16px; 
+}
+
+.for-bus-card:last-child {
+    margin-bottom: 0;
+}
+/* ###################### */
+/* End of for-dev section */
+/* ###################### */
+/* --------------------------------------------------------------------------------------------- */
+/* ################# */
+/* For-teams section */
+/* ################# */
+#for-teams-section {
+    padding: 128px 0;
+    background-color: #2e2c6c;
+}
+
+#for-teams-section h2 {
+    color: #fff;
+    margin-bottom: 24px;
+    max-width: 445px;
+}
+
+#for-teams-section p {
+    color: #fff;
+    margin-bottom: 24px;
+    max-width: 356px;
+}
+
+#for-teams-section .orange-button {
+    margin-bottom: 64px;
+}
+
+.gray-theme {
+    background-color: #c8ccd0;
+    color: #000;
+}
+
+.dark-gray-theme {
+    background-color: #3c4146;
+    color: #fff;
+}
+
+.blue-theme {
+    background-color: #2e2c6c;
+    color: #fff;
+}
+
+#for-teams-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: unset;
+    margin: 0 77px;
+    min-width: 268px;
+}
+
+.for-teams-card {
+    background-color: #fff;
+    border: 1px solid #e4e6e8;
+    border-radius: 7px;
+    padding: 24px;
+    text-align: left;
+    margin: 16px 0 32px 0;
+    width: 100%;
+}
+
+.for-teams-card * {
+    width: unset;
+    max-width: unset !important;
+}
+
+.for-teams-card h4 {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 4px 8px;
+    margin-bottom: 15px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+}
+
+.for-teams-card p {
+    color: #000 !important;
+    font-size: 14.5px;
+    height: 32px;
+}
+
+.for-teams-card a {
+    display: block;
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14.5px;
+    margin-top: 36px;
+}
+
+.for-teams-card a:hover {
+    background-color: #2895fc;
+    color: #fff;
+}
+
+.for-teams-card ul {
+    list-style: none;
+    font-size: 14.5px;
+}
+
+.for-teams-card ul img {
+    margin-right: 12px;
+    vertical-align:bottom;
+}
+
+.for-teams-card li {
+    line-height: 18px;
+    margin-bottom: 12px;
+}
+
+#most-used-hat {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    margin: 16px 16px 0 16px;
+    background-color: #e4e6e8;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    font-size: 14px;
+    width: unset;
+}
+
+#most-used-hat img {
+    height: 18px;
+    width: 18px;
+    margin: 0;
+}
+
+#most-used-card {
+    width: 100%;
+    order: -1;
+}
+
+#most-used-card .for-teams-card{
+    background-color: #fafafb;
+    margin-top: 0;
+}
+
+.cost {
+    padding-top: 12px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #e4e6e8;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.cost span {
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-size: 25px;
+    display: block;
+}
+
+.cost * {
+    margin: unset;
+}
+
+.cost p {
+    color: #9199a1 !important;
+    height: unset !important;
+}
+
+#special-cost {
+    border-bottom: 1px solid #242729;
+}
+
+#for-teams-links {
+    margin-top: 48px;
+}
+
+#for-teams-links a {
+    color: #bbc0c4;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    margin: 12px 24px;
+    display: inline-block;
+    width: unset;
+}
+
+#for-teams-links a:hover {
+    color: #fff;
+}
+
+#for-teams-links img {
+    height: 35px;
+    width: auto;
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* 
+#cost-buttons {
+    margin-bottom: 24px;
+    border: 1px solid #c8ccd0;
+    border-radius: ;
+} */
+/* ######################## */
+/* End of for-teams section */
+/* ######################## */
+/* --------------------------------------------------------------------------------------------- */
+/* ############### */
+/* Workers section */
+/* ############### */
+#workers-section {
+    padding: 128px 0;
+    background-color: #f7f6f9;
+}
+
+#workers-cards {
+    display: flex;
+    flex-direction: column;
+    max-width: 1055px;
+}
+
+#workers-cards * {
+    width: unset;
+}
+
+.workers-card {
+    text-align: left;
+}
+
+.workers-card:nth-child(1) {
+    margin-bottom: 64px;
+}
+
+.workers-card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.workers-card p {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.workers-card img {
+    width: 76px;
+    height: 76px;
+}
+/* ###################### */
+/* End of workers section */
+/* ###################### */
+/* --------------------------------------------------------------------------------------------- */
+/* ################ */
+/* Animated section */
+/* ################ */
+#animated-section {
+    padding: 64px 0;
+}
+
+#animated-section h2 {
+    margin-bottom: 24px;
+}
+
+#animated-section a {
+    margin-top: 24px;
+    font-size: 15px;
+}
+
+#animated-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 48px auto 0;
+    justify-content: center;
+}
+
+#animated-cards * {
+    width: unset;
+}
+
+#animated-cards img {
+    width: 46px;
+    height: 46px;
+}
+
+.three-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 48px;
+}
+
+.animated-card {
+    padding: 12px;
+    width: 33.3% !important;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+.checked-card {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.09),0 3px 8px rgba(0,0,0,0.09),0 4px 13px rgba(0,0,0,0.13);
+}
+
+.animated-card:hover {
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06),0 2px 6px rgba(0,0,0,0.06),0 3px 8px rgba(0,0,0,0.09);
+}
+
+#checked-card {
+    width: 80%;
+    max-width: 500px;
+    margin-top: 24px;
+    margin: auto;
+}
+
+#checked-card img {
+    width: 100%;
+    height: auto;
+}
+
+#checked-card p {
+    width: unset;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 21px;
+}
+/* ####################### */
+/* End of animated section */
+/* ####################### */
+/* --------------------------------------------------------------------------------------------- */
+/* ########### */
+/* Job section */
+/* ########### */
+#job-section {
+    padding: 128px 0;
+    background-color: #e1ecf4;
+}
+
+#job-section h2 {
+    margin-bottom: 24px;
+}
+
+#job-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#job-cards a {
+    color: #000;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+}
+
+#job-cards a:last-child {
+    margin-bottom: 16px;
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06),0 2px 6px rgba(0,0,0,0.06),0 3px 8px rgba(0,0,0,0.09);
+    margin-bottom: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    max-width: 330px;
+}
+
+.job-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+}
+
+#robot {
+    width: 51px;
+    height: 51px;
+    position: absolute;
+    bottom: -4px;
+    right: 64px;
+}
+/* ################## */
+/* End of job section */
+/* ################## */
+/* --------------------------------------------------------------------------------------------- */
+/* ############# */
+/* Learn section */
+/* ############# */
+#learn-section {
+    padding: 128px 0;
+}
+
+#learn-section h2 {
+    margin-bottom: 72px;
+}
+
+#learn-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learn-card {
+    max-width: 270px;
+    margin-bottom: 48px;
+}
+
+.learn-card:last-child {
+    margin-bottom: 0px;
+}
+
+.learn-card img {
+    height: 151px;
+    width: auto;
+    margin-bottom: 16px;
+}
+
+.learn-card h3 {
+    margin-bottom: 16px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.learn-card p {
+    font-size: 14px;
+}
+
+.learn-card a {
+    color: #1e77ca;
+}
+
+.learn-card a:hover {
+    color: #2895fc;
+}
+/* #################### */
+/* End of learn section */
+/* #################### */
+/* --------------------------------------------------------------------------------------------- */
+/* ############## */
+/* Footer section */
+/* ############## */
+footer {
+    padding: 24px 12px;
+    background-color: #242729;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #6a737c;
+}
+
+#footer-full {
+    max-width: 1264px;
+    margin: auto;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    line-height: 22px;
+}
+
+#footer-logo {
+    display: none;
+}
+
+footer a {
+    color: #848d95;
+}
+
+footer a:hover {
+    color: #9fa6ad;
+}
+
+footer h5 {
+    font-size: 11px;
+    color: #bbc0c4 !important;
+    margin-bottom: 12px;
+}
+
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-block {
+    padding: 0 12px 24px 0;
+    flex-grow: 1;
+}
+
+#footer-copyright ul li{
+    display: inline;
+    margin-right: 12px;
+}
+
+#footer-copyright p {
+    margin-bottom: 24px;
+}
+/* ##################### */
+/* End of footer section */
+/* ##################### */
+@media only screen and (min-width: 641px) {
+    body {
+        font-size: 17px;;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    /* ############## */
+    /* Header section */
+    /* ############## */
+    #header-logo {
+        width: 166px;
+        background: url("images/header/label_full.svg") no-repeat center;
+    }
+
+    #header-links a {
+        font-size: 13px;
+        padding: 6px 16px;
+    }
+    /* ##################### */
+    /* End of header section */
+    /* ##################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ############ */
+    /* Main section */
+    /* ############ */
+    #main-section {
+        background: #fdcf2e url("images/main/background_big.svg") no-repeat top center;
+    }
+
+    #main-section h1 {
+        font-size: 55px;
+    }
+
+    #main-section p {
+        font-size: 21px;
+        max-width: 400px;
+    }
+
+    #main-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #main-links a {
+        font-size: 15px;
+    }
+
+    #main-links .white-button {
+        margin-bottom: 0;
+        margin-right: 8px;
+    }
+    /* ################### */
+    /* End of main section */
+    /* ################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ############### */
+    /* For-dev section */
+    /* ############### */
+    #for-dev-section p {
+        max-width: 520px;
+    }
+
+    .for-dev-card {
+        max-width: 316px;
+    }
+
+    .for-dev-card h3 {
+        font-size: 21px;
+    }
+
+    .for-dev-card p {
+        font-size: 15px;
+    }
+
+    .for-dev-card a {
+        font-size: 15px;
+    }
+    /* ###################### */
+    /* End of for-dev section */
+    /* ###################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ############### */
+    /* For-bus section */
+    /* ############### */
+    #for-bus-section p {
+        max-width: 633px;
+    }
+
+    .for-bus-card {
+        max-width: 366px;
+    }
+    /* ###################### */
+    /* End of for-bus section */
+    /* ###################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ################# */
+    /* For-teams section */
+    /* ################# */
+    #for-teams-section h2 {
+        max-width: 520px;
+    }
+
+    #for-teams-section p {
+        max-width: 421px;
+    }
+
+    #for-teams-section a {
+        font-size: 15px;
+    }
+
+    #for-teams-cards {
+        margin-left: 192px;
+        margin-right: 192px;
+    }
+
+    .for-teams-card p {
+        font-size: 15px;
+    }
+
+    .for-teams-card a {
+        font-size: 15px;
+    }
+
+    .cost span {
+        font-size: 35px;
+    }
+
+    #for-teams-links a {
+        font-size: 17px;
+    }
+    /* ######################## */
+    /* End of for-teams section */
+    /* ######################## */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ############### */
+    /* Workers section */
+    /* ############### */
+    #workers-cards {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .workers-card:nth-child(1) {
+        margin: auto;
+        margin-right: 64px;
+    }
+
+    .workers-card h2 {
+        font-size: 27px;
+    }
+
+    .workers-card p {
+        font-size: 15px;
+    }
+
+    .workers-card  a { 
+        font-size: 15px;
+    }
+    /* ###################### */
+    /* End of workers section */
+    /* ###################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ############# */
+    /* Learn section */
+    /* ############# */
+    #learn-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .learn-card:last-child {
+        margin-bottom: 48px;
+    }
+
+    .learn-card * {
+        width: 100%;
+    }
+
+    .learn-card h3 {
+        font-size: 20px;
+    }
+
+    .learn-card p {
+        font-size: 15px;
+    }
+    /* #################### */
+    /* End of learn section */
+    /* #################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ########### */
+    /* Job section */
+    /* ########### */
+    #job-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 680px;
+    }
+
+    #job-cards a {
+        width: 50%;
+    }
+
+    .job-card {
+        margin-bottom: 32px;
+    }
+    /* ################## */
+    /* End of job section */
+    /* ################## */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ############## */
+    /* Footer section */
+    /* ############## */
+    #footer-logo {
+        display: inline-flex;
+        width: 50px;
+        height: 50px;
+    }
+
+    #footer-links {
+        font-size: 13px;
+    }
+
+    #footer-links h5 {
+        font-size: 13px;
+    }
+    /* ##################### */
+    /* End of footer section */
+    /* ##################### */    
+}
+/* --------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 817px) {
+    /* ############## */
+    /* Header section */
+    /* ############## */
+    .show-on-wide {
+        display: inline-block;
+    }
+
+    #header-right {
+        flex-grow: 1;
+    }
+
+    #header-form {
+        display: inline-block;
+        flex-grow: 1;
+    }
+
+    #header-loupe {
+        display: none;
+    }
+    /* ##################### */
+    /* End of header section */
+    /* ##################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ############### */
+    /* For-dev section */
+    /* ############### */
+    #for-dev-cards {
+        flex-direction: row;
+        align-items: unset;
+    }
+
+    .for-dev-card {
+        height: fit-content;
+    }
+
+    .for-dev-card:nth-child(even) {
+        margin: 0 64px;
+    }
+
+    .for-dev-card:nth-child(odd) {
+        margin: 64px 0 0 0;
+    }
+    /* ###################### */
+    /* End of for-dev section */
+    /* ###################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ############### */
+    /* For-bus section */
+    /* ############### */
+    #for-bus-cards {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .for-bus-card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .for-bus-card:nth-child(even) {
+        margin: 0 48px;
+    }
+
+    .for-bus-card img {
+        margin: 0 16px 16px 0;
+    }
+    /* ###################### */
+    /* End of for-bus section */
+    /* ###################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ################# */
+    /* For-teams section */
+    /* ################# */
+    #for-teams-section {
+        background-image: url("images/for_teams/background.svg");
+        background-position-x: center;
+        background-position-y: 55%;
+        background-repeat: no-repeat;
+        background-size: 85%;
+    }
+
+    #for-teams-cards {
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+
+    #most-used-card {
+        order: unset;
+    }
+    /* ######################## */
+    /* End of for-teams section */
+    /* ######################## */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ################ */
+    /* Animated section */
+    /* ################ */
+    #animated-cards {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .three-cards {
+        flex-direction: column;
+        width: 25%;
+    }
+
+    .three-cards:nth-child(2) {
+        order: 1;
+    }
+
+    .animated-card {
+        flex-direction: row;
+        margin: 0;
+        width: 100% !important;
+    }
+
+    #checked-card {
+        width: 50%;
+        margin: 24px;
+    }
+    /* ####################### */
+    /* End of animated section */
+    /* ####################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ############# */
+    /* Learn section */
+    /* ############# */
+    #learn-cards {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .learn-card {
+        margin: 0 32px 0 0;
+        width: 25%;
+        text-align: left;
+    }
+
+    .learn-card:last-child {
+        margin: 0;
+    }
+
+    .learn-card img {
+        max-width: 100%;
+        width: auto;
+
+    }
+    /* #################### */
+    /* End of learn section */
+    /* #################### */
+}
+/* --------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 911px) {
+    #footer-full {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #footer-links {
+        flex-wrap: nowrap;
+        flex-grow: 1;
+    }
+
+    #footer-copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 270px;
+    }
+}
+
+@media only screen and (min-width: 1101px) {
+    /* ############### */
+    /* For-bus section */
+    /* ############### */
+    .for-bus-card {
+        flex-direction: row;
+        max-width: 390px;
+    }
+
+    .for-bus-card img {
+        margin-bottom: 0;
+    }
+    /* ###################### */
+    /* End of for-bus section */
+    /* ###################### */
+    /* ----------------------------------------------------------------------------------------- */
+    /* ########### */
+    /* Job section */
+    /* ########### */
+    #job-section h2 {
+        max-width: 1264px;
+        text-align: left;
+    }
+
+    #with-link {
+        /* width: 90%; */
+        display: flex;
+        flex-direction: row;
+        max-width: 1264px;
+        justify-content: flex-end;
+    }
+
+    #with-link .orange-button {
+        margin: auto;
+        white-space: nowrap;
+    }
+
+    #job-cards {
+        flex-wrap: nowrap;
+        max-width: unset;
+        margin: 0;
+    }
+
+    #job-cards a:last-child {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    .job-card {
+        margin-bottom: 0;
+        margin-right: 32px;
+    }
+    /* ################## */
+    /* End of job section */
+    /* ################## */
+}
+/* --------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1144px) {
+    /* ################# */
+    /* For-teams section */
+    /* ################# */
+    #for-teams-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+
+    .for-teams-card:nth-child(1) {
+        width: 48%;
+        margin-top: 50px;
+    }
+
+    .for-teams-card:nth-child(1) a {
+        margin-top: 100px;
+    }
+
+    .for-teams-card a {
+        margin-top: auto;
+    }
+
+    #most-used-card {
+        width: 48%;
+    }
+
+    #big-card {
+        flex-grow: 1;
+    }
+    /* ######################## */
+    /* End of for-teams section */
+    /* ######################## */
+}
+/* --------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1492px) {
+    /* ################# */
+    /* For-teams section */
+    /* ################# */
+    #for-teams-cards {
+        max-width: 1024px;
+        margin: auto;
+        align-items: flex-start;
+    }
+
+    .for-teams-card:nth-child(odd) {
+        width: 32%;
+        /* margin-top: 50px; */
+        /* height: 615px; */
+    }
+
+    #most-used-card {
+        width: 32%;
+    }
+
+    #big-card {
+        flex-grow: unset;
+    }
+
+    /* ######################## */
+    /* End of for-teams section */
+    /* ######################## */
+}
